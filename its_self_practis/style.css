@@ -1,0 +1,17 @@
+#r{ 
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-kerning: auto;
+    font-stretch: ultra-expanded;
+    color:red;
+}
+#form{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    page-break-inside: inherit;
+}
+#form age{
+    
+}
