@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Program</title>
+    <link rel="styleSheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="text-here" id="text-container">
+
+        Love you Dosto
+        
+        </div>
+        
+        <input type="text" id="colorbox" placeholder="color name"/>
+        
+        <button class="stylebt" onclick="setColor()">SetColor</button>
+        
+        <input type="range" min="10" max="100" default="55" id="rangebox" onchange="rangeFunc()" placeholder="color name"/>
+        
+        <button class="stylebt" onclick="textStyle('bold')">bold</button>
+        
+        <button class="stylebt" onclick="textStyle('italic')">Italic</button>
+        
+        <button class="stylebt" onclick="textStyle('underline')">UnderLine</button>
+        
+        <select id="fontFamily" onchange="fn_fontFamily()">
+        
+        <option>Cursive</option>
+        
+        <option>Serif</option>
+        
+        <option>Sans-serif </option>
+        
+        <option>Monospace</option>
+        
+        <option>Fantasy</option>
+        
+        </select>
+        
+        <button class="stylebt" onclick="getStyle()">CSS Property</button>
+
+</body>
+</html>
