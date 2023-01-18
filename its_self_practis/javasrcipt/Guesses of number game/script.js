@@ -6,7 +6,7 @@ function checkNumber() {
     var input = document.getElementById('userInput').value;
     if (input == randomNumber) {
         output.innerHTML = "You guessed right " + ", " + " it was " + randomNumber;
-        output.style.color = "green";
+        output.style.color = "yellow";
     }
     else if (input > randomNumber && input < 100) {
         output.innerHTML = "You guessed too high";
