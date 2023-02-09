@@ -1,0 +1,26 @@
+<script>
+    // // get a new date and time
+    // const now = new Date()
+    // document.write(now)
+
+    // get a full year
+    // const year = new Date()
+    
+    // document.write(year.getFullYear())
+//     
+
+// const now = new Date()
+// console.log(now.getDay())
+// const now = new Date()
+// console.log(now.getHours()) 
+
+const now = new Date()
+const year = now.getFullYear() // return year
+const month = now.getMonth()  // return month(0 - 11)
+const date = now.getDate() // return date (1 - 31)
+const hours = now.getHours() // return number (0 - 23)
+const minutes = now.getMinutes() // return number (0 -59)
+console.log(`${year}/${month}/${date} ${hours} : ${minutes}` )
+document.write(`${hours} : ${minutes} : ${date}/${month}/${year}`)
+    
+</script>
