@@ -1,0 +1,229 @@
+<script>
+
+// normal function (declaration)
+// delclaring a function without any parameter
+function functionName(){
+
+}
+functionName(); //  calling the function by its name and with parentheses
+
+// Function without a parameter and return
+function square(){
+    let num =2;
+    let sqrt =  num *num;
+    console.log(sqrt)
+}
+ square();
+
+ function add(){
+    let a = 3;
+    let b = 4;
+    let c = a+b;
+    console.log(c);
+ }
+ add();
+
+ function subs(){
+    let x = 10;
+    let y = 3;
+    let z = x-y;
+    console.log(z)
+ }
+ subs();
+
+ function printFullName(){
+    let fistname = "kamruddin";
+    let lastName = 'Ansari';
+    let space = ' ';
+    console.log(fistname + space + lastName);
+ }
+ printFullName();
+
+//  Function with a parameter
+
+// function functionName(func){
+//     // code........
+// }
+// functionName(func) // during calling or invoking one argument needed
+
+function areaCircle(r){
+    let area = Math.PI *r * r;
+    return area;
+}
+console.log(areaCircle(4));
+
+function square(number){
+    let a = number * number;
+    return a;
+}
+console.log(square(3));
+
+// Function with two parameters
+
+function per(fpara, spara){
+    let a = fpara + spara;
+    let b = a/200*100;
+    return b;
+}
+console.log(per(80,80));
+
+function add(numone, numtwo){
+    let a = numone + numtwo;
+    return a;
+}
+console.log(add(10,10))
+
+
+function printFullName(fname, lname){
+    return `${fname} ${lname}`;
+}
+console.log(printFullName("kamruddin" , "ansari"));
+
+// Function with many parameters
+// function with multiple parameters
+// function functionName(parm1, parm2, parm3,...){
+//   //code goes here
+// }
+// functionName(parm1,parm2,parm3,...) // during calling or invoking three arguments needed
+
+function manyPara(fpara, spara, lpara){
+    let a = fpara + spara + lpara;
+    return a;
+}
+console.log(manyPara(10,20,30))
+console.log(add(20,20))
+
+console.log(printFullName("srijal", "srivasta"));
+
+// this function takes array as a parameter and sum up the numbers in the array
+
+function sumArrayValue(arr){
+    let sum =0;
+    for(let i=0; i<arr.length; i++){
+       sum+= arr[i];
+
+    }
+    return sum;
+}
+const addNum = [1,2,3,4,5];
+const b=[10,20,30,30];
+
+// calling the return function
+console.log(sumArrayValue(addNum));
+console.log(sumArrayValue(b));
+
+// arrow function........
+
+let areaCir = (radius)=>{
+    let total = Math.PI * radius * radius;
+    return total;
+
+}
+console.log(areaCir(10))
+console.log(areaCir(11));
+console.log(areaCircle(11));
+
+
+// Function with unlimited number of parameters
+
+
+// Let us access the arguments object
+
+// const sumAllNums = (...args) => {
+//  // console.log(arguments), arguments object not found in arrow function
+//  // instead we use a parameter followed by spread operator (...)
+//  console.log(args)
+// }
+
+// sumAllNums(1, 2, 3, 4)
+// // [1, 2, 3, 4]
+
+
+// function declaration
+
+const totalSum = (...args)=>{
+    let sum = 0;
+    for(const element of args){
+        sum+=element;
+    }
+    return sum;
+
+    
+}
+console.log(totalSum(1,2,3,4));
+console.log(totalSum(10,30,40));
+console.log(totalSum(2,3,4,3));
+
+
+// Anonymous Function
+
+const anonymousFun = function() {
+  console.log(
+    'I am an anonymous function and my value is stored in anonymousFun'
+  )
+}
+
+
+// Expression Function
+
+const Exp = function(n){
+    return n*n;
+}
+console.log(Exp(10));
+
+// Self Invoking Functions
+// Self invoking functions are anonymous functions which do not need to be called to return a value.
+
+(function(n){
+    console.log(n*n);
+})
+(2);
+
+(function(b){
+    console.log(b+b);
+})
+(4)
+
+
+// Arrow Function
+// ye normal function hain
+function sq(n){
+    return n*n;
+}
+console.log(sq(5));
+
+// aur ye arrow function hain
+
+const sqr = (n)=>{
+      return n*n;
+}
+console.log(sqr(5));
+
+
+const changeToUpeerCase = (arr)=>{
+    const newArr = [];
+    for(let element of arr){
+        newArr.push(element.toUpperCase());
+       
+
+    }
+    return newArr;
+}
+const listOfCity = ['lucknow', 'mumabai', 'kushinagar','padrauna'];
+console.log(changeToUpeerCase(listOfCity));
+
+ const changeToLowerCase = (ar)=>{
+    let newArrays = [];
+    for(let element of ar){
+        newArrays.push(element.toLowerCase());
+    }
+    return newArrays;
+ }
+ let listOfStudents = ['ANSARI', 'SRIJAL','AZAM'];
+ console.log(changeToLowerCase(listOfStudents));
+ 
+
+
+
+
+</script>
