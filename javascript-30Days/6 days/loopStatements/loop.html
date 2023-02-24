@@ -1,0 +1,94 @@
+<script>
+
+// for loop 
+
+// for(let i = 0; i<5; i++){
+//     console.log(i)
+// }
+
+// for(let j=0; j<=10;j++){
+//     console.log(j)
+// }
+for(let k=5; k>=0 ;k--){
+    console.log(k)
+}
+
+for(let i = 0; i<=10; i++){
+    console.log(`${i} * ${i} = ${i*i}`);
+}
+
+// list convert lower case top uper case using loops
+ 
+ const cityName  = ['lucknow', 'noida', 'delhi', 'kanpur', 'padraun', 'gorkhapur'];
+ const newArr = [];
+ for(let i=0; i<cityName.length; i++){
+    newArr.push(cityName[i].toUpperCase())
+ }
+ console.log(newArr);
+
+ const webtech = ['HTML','CSS','JAVA','PYTHON'];
+ const newAr = [];
+for(let i=0; i<webtech.length; i++){
+    newAr.push(webtech[i].toLowerCase());
+
+ }
+ console.log(newAr)
+
+
+ const v = 'ansari';
+ console.log(v.toUpperCase())
+
+ // Adding all elements in the array
+
+ const a = [1,2,3,4,5,6];
+ let sum =0;
+ for(let j = 0; j<a.length; j++){
+    sum+=a[j];
+ }
+ console.log(sum)
+
+
+ // Creating a new array based on the existing array
+
+ const s = [1,2,3,4,5];
+ const newArray = [];
+ let x = 0;
+ for(let y=0; y<s.length; y++){
+    newArray.push(s[y]*2)
+ 
+ }
+ console.log(newArray)
+
+
+ // while loop
+
+ let w = 0;
+ while(w <=5){
+    console.log(w)
+    w++;
+   
+
+ }
+ let i = 0
+while (i <= 5) {
+  console.log(i )
+  i++
+}
+
+// for of loop
+// We use for of loop for arrays. It is very hand way to iterate through an array if we are not interested in the index of each element in the array.
+
+let number = [1,2,3,4,5,56];
+for(let num of number){
+    console.log(num)
+}
+let ab = ['ansari','srijal'];
+for(let nums of ab){
+    console.log(nums)
+}
+
+ 
+
+
+
+</script>
