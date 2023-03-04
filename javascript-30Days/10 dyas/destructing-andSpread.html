@@ -1,3 +1,181 @@
 <script>
+    const names = {
+        name:"ansari",
+        age:22
+    }
+    let {name, age} = names;
+    console.log(name);
+    console.log(age)
+
+
+    function person({name, age}){
+        console.log(`my name ${name} i am ${age}`)
+    }
+    person(names)
+
+
+    const num = [1,2,3,4,5];
+    let [num1,num2,num3,num4]= num;
     
+    console.log(num1);
+    console.log(num2);
+    console.log(num3);
+    console.log(num4);
+    const numbers = [1, 2, 3]
+  let [numOne, numTwo, numThree] = numbers
+
+  console.log(numOne, numTwo, numThree);
+
+
+
+const webTech = [['html','css','js','react'],['nodeJs','mySql','Express']];
+let [front,bacckend] = webTech;
+console.log(front);
+console.log(bacckend);
+
+
+//  we want to some item remove from the arrays (omit) how to do; lets see
+
+// we can do with the help of ',' it is omit the particualr poistion items;
+
+const item = ['mobile', ' clothes', 'laptop', 'watch'];
+let [, secondItem ,  , fourthItem] = item;
+console.log(secondItem, fourthItem)
+
+ // let firts items undefined , we can do if my first item empty how to do lets see;
+
+ // we can do ' some value insert'
+
+ const personDetails = [undefined, 'ansari','srijal'];
+ const [
+    firtsPerson= "azam",
+    secondperson,
+    thirdperson,
+    fourthperson='aman'
+ ] = personDetails;
+
+ console.log(firtsPerson,secondperson,thirdperson,fourthperson);
+
+
+ // spread oprator 
+
+ const  spre = [1,2,3,4,5,6,7,8,9];
+ let [one,two,three,four, ...r] = spre;
+
+ console.log(one,two,three,four);
+ console.log(r);
+
+ // Destructuring during iteration
+
+ const city = [['lucknow','agra'], ['mumbai','delhi'],['gorkhpur','kushinagae']];
+
+for(const[lucknow,mumbai] of city) {
+    console.log(lucknow,mumbai);    
+}
+
+// Destructuring Object
+
+// const details = [{
+//       name:"ansari",
+//       age:22,
+//       id:123
+// }
+// ]
+// function x (item){
+//     return age ;
+// }
+// const nn = details.map(item);
+// console.log(nn)
+
+
+const rectangle = {
+  width: 20,
+  height: 10,
+  area: 200
+}
+let { width, height, area, perimeter } = rectangle
+console.log(width, height, area, perimeter)
+
+
+const p = {
+  firstName: 'Asabeneh',
+  lastName: 'Yetayeh',
+  age: 250,
+  country: 'Finland',
+  job: 'Instructor and Developer',
+  skills: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB',
+    'Python',
+    'D3.js'
+  ],
+  languages: ['Amharic', 'English', 'Suomi(Finnish)']
+}
+// Let us create a function which give information about the person object without destructuring
+
+const getPersonInfo = obj => {
+  const skills = obj.skills
+  const formattedSkills = skills.slice(0, -1).join(', ')
+  const languages = obj.languages
+  const formattedLanguages = languages.slice(0, -1).join(', ')
+
+  personInfo = `${obj.firstName} ${obj.lastName} lives in ${obj.country}. He is  ${
+    obj.age
+  } years old. He is an ${obj.job}. He teaches ${formattedSkills} and ${
+    skills[skills.length - 1]
+  }. He speaks ${formattedLanguages} and a little bit of ${languages[2]}.`
+
+  return personInfo
+}
+
+console.log(getPersonInfo(p))
+// spread or rest operator
+
+const o = [1,2,3,4,5,6,7,8]
+const [on,tw,t, ...rest] = o;
+console.log(on,tw,t);
+
+const cityName =[
+  'lucknow',
+  'mumbai',
+  'delhi',
+  'kolkkta',
+  'gorakhpur'
+];
+const [luck, mum, ...citesRest] = cityName;
+console.log(luck);
+console.log(mum);
+console.log(citesRest)
+
+const even=[0,2,4,6,8];
+const evenNumber = [...even] ;
+
+const odd = [1,3,5,7,9];
+const oddNumber = [...odd];
+const wholeNum = [...even, ...odd];
+
+
+console.log(evenNumber);
+
+console.log(oddNumber)
+console.log(wholeNum)
+
+
+const hh = (...args) =>{
+  let sum = 0;
+  for( const num of args){
+    sum+= num;
+  }
+  return sum;
+}
+console.log(hh(1,2,3,4,5));
+
+
+
+
 </script>
