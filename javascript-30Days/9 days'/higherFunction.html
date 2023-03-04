@@ -1,0 +1,184 @@
+<script>
+   const callback = (n )=>{
+    
+       return n ** 2;
+   }
+   function cube(callback,n){
+    return callback(n)*n;
+
+   }
+   console.log(cube(callback,3))
+
+
+//    settin
+
+//  function set(){
+//     console.log("hello")
+//  }
+//  setInterval(set,2000)
+
+
+// foEachLoop
+
+
+let arr;
+// arr.forEach(function(index, elem, arr)){
+//     console.log(index, elem, arr);
+// }
+// arr.forEach((index, elem, arr)=>{
+//     console.log(index, elem, arr)
+// })
+
+// arr.forEach(()=>{
+
+// })
+
+
+// we are only used with arrays 
+
+let sum =0;
+let numbers= [1,2,3,4,5];
+numbers.forEach(num => sum+= num);
+console.log(sum)
+const city = ['lucknow', 'mumbai', 'kushinnagar','padrauna'];
+city.forEach((ele)=> console.log(ele.toLocaleUpperCase()))
+// map
+
+const a =[ 1,2,3,4,5,6];
+const Sqrt = a.map((num)=> num*num);
+console.log(Sqrt)
+
+
+const b = [ 1,2,3,4,5,6];
+const add = b.map((nums) => nums+nums);
+console.log(add);
+
+const webTech = ['htmla', '{cssa}','java','python','react'];
+const up = webTech.map((items) => items.toLocaleUpperCase());
+console.log(up) 
+
+// filter
+// Filter: Filter out items which full fill filtering conditions and return a new array.
+
+// i want to filter java in arrays
+
+const fil = webTech.filter((filtr,)=>filtr=='java');
+const inc= webTech.filter((incd) => incd.includes('r')); // we are filter the multiple item with the help ogf includes
+
+console.log(inc)
+console.log(fil)
+
+const s = webTech.filter((d)=>d.includes('a'));
+console.log(s);
+
+// const score = [
+//     {
+//         name:"ansari",
+//         age:22,
+//         id:2133
+//     },
+//     {
+//         name:"nsari",
+//         age:27,
+//         id:1133
+
+//     },
+//     {
+//         name:"ansari",
+//         age:30,
+//         id:9933
+//     }
+// ]
+
+// // const g = score.filter((h) => h.age >= 27);
+// // console.log(g)
+// const sb = score.filter((d)=>d.includes('a'));
+// console.log(sb)
+//  //   i want to filter a name 
+
+// // for(let i=0; i<score.length; i++){
+// //     let k = i.filter('a');
+// // }
+// // console.log(k)
+
+
+
+
+
+
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const areAllStr = names.every((name) => typeof name === 'string') // Are all strings?
+
+console.log(areAllStr);
+
+const bools = [true, true, true, true]
+const areAllTrue = bools.every((b) => b === true) // Are all true? 
+
+console.log(areAllTrue)
+
+// find
+ 
+const age = [
+    {
+        id:1,
+        age:20
+    },
+    {
+        id:2,
+        age:21
+    },
+    {
+        id:3,
+        age:22
+    },
+    {
+        id:4,
+        age:40
+    },
+    {
+        id:5,
+        age:30
+    },
+]
+
+const c = age.find((search) => search.age >=22);
+console.log(c);
+
+const j = age.filter((serach) => serach.age >=20);
+console.log(j)
+
+// findIndex
+
+// const Names = ['ansari', 'rahul', 'srijal', ' azam', 'karan', 'amit', 'manish'];
+// const ages = [20,30,22, 34,18,23,24,13];
+
+// const rahul = Names.findIndex((name)=>name.length > 5);
+// console.log(rahul);
+//  const  jj =  ages.findIndex((age)=>name.length > 4);
+//  console.log(jj)
+
+const items = [ 'apple', 'banana','orange', 'graps', 'mango'];
+console.log(items.sort())
+
+const item = items.sort();
+
+
+const numb = [1,4]
+// Using sort method to sort number items provide a wrong result. see below
+console.log(numb.sort()) //[100, 3.14, 37, 9.81]
+numb.sort(function (a, b) {
+  return a - b
+})
+// nummber to binary convert
+const nn = numb.map((binary)=>binary.toString(2));
+console.log(nn);
+
+const num = [28,2,48,50,34,2];
+function x(y){
+    return y % 2 === 0;
+}
+const f = num.filter(x);
+console.log(f)
+
+
+</script>

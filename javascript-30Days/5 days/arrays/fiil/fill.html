@@ -82,8 +82,8 @@
         'python',
         'reactJs'
     ]
-    console.log(webTech.includes('node'))
-    console.log(webTech.includes('java'))
+    console.log(webTech.includes('node'))//false
+    console.log(webTech.includes('java'))//  true
 
 
     // Checking array
@@ -122,11 +122,18 @@
  /// it is copies to all items
     console.log(arr.slice());
     console.log(arr.slice(0))
+
+    let ab = ["ansari", "srijal", "ajam", 'amit'];
+    console.log(ab.slice(1,3))
     
 
     // splice 
 
     // it is remove to all items
+// and insert the item in particular position
+
+  // syntax = splice(start, howmany delete, "new value insert")
+
 
     const spli = [1,3,4,5,6,7,9];
     console.log(spli.splice()) // remove the all items
@@ -135,11 +142,70 @@
     console.log(spli.splice(1,2))   
 
 
-    const n = [1, 2, 3, 4, 5, 6]
-	n.splice(3, 3, 7, 8, 9)
-  console.log(n.splice(3, 3, 7, 8, 9))
+//     const n = [1, 2, 3, 4, 5, 6]
+// 	n.splice(3, 3, 7, 8, 9)
+//   console.log(n.splice(3, 3, 7, 8, 9))
+
+// Adding item to an array using push
+// add the number in last index 
+ const b = [1,2,4,56];
+//  b.push('new value')
+ console.log(b)
+ console.log(b.push(3))
+
+ const c = ["ansari", 'srijal', 'amit','azam'];
+ c.push('karan');
+ console.log(c)
+ //Removing the end element using pop
+
+ // pop method
+ // remove item from the end index
 
 
+ const a = ["ansari", 'srijal', 'amit','azam'];
+ a.pop(2);
+ console.log(a)
+
+ // Removing an element from the beginning
+ // remove the item from the begning 
+ // first index remove from the arrays
+ // using shift kyeword
+
+
+ const pop = ['ansari', 'srijal', 'azam'];
+ pop.shift(1);
+ console.log([pop])
+
+ // insert the item in begning 
+
+ const insertBegin = ['ansari','azam', 'amit'];
+ insertBegin.unshift('srijal');
+ console.log(insertBegin)
+
+
+//  Reversing array order
+
+const Reverse = ['ansari','azam', 'amit'];
+console.log(Reverse.reverse())
+const reverse = [1,2,3,4,5,6];
+reverse.reverse();
+console.log(reverse)
+
+
+//Sorting elements in array
+
+// the sorting the set accending order all list using sort methods..
+
+const sortMethod = [
+    'mangoDB',
+    'html',
+    'java',
+    'javaSrcipt',
+    'python',
+    'html',
+    'css'
+];
+console.log(sortMethod.sort())
 
 
     
