@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1  id="one" class="first">Ansari</h1>
+        <h1 id="2" class="second">Ansari</h1>
+        <h10  id="3"class="three">absari</h10>
+    </div>
+    <script>
+         // get element by id 
+         let a = document.getElementById('one')
+         console.log(a);
+         console.log(a.lenght);
+         for(const i=0; i<a.lenght; i++){
+            console.log(a)
+         }
+
+         // get element by className
+
+         let b = document.getElementsByClassName('first')
+         console.log(b);
+         console.log(b.lenght);
+         for(const i=0; i<b.lenght; i++){
+            console.log(b);
+         }
+
+         // get elements by tagName;
+
+         let c = document.getElementsByTagName('h1');
+         console.log(c);
+         console.log(c.length);
+         for(let i=0; i<c.length; i++){
+            console.log(c);
+         }
+
+         // quearuSelector
+        // queary selector it can select the all html tags
+
+         let d = document.querySelectorAll('h1')
+        console.log(d)
+
+        // quary selector
+
+        // we can select the tag name className, or id with the help of quary selctor;
+
+
+        let e = document.querySelector('h1'); // tag name
+        let f =document.querySelector('.one'); // id 
+
+        let g  = document.querySelector('#first') // className
+        console.log(e)
+        console.log(f);
+        console.log(g);
+
+
+        
+
+    </script>
+</body>
+</html>

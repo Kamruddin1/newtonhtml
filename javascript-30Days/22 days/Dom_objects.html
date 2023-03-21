@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model:30 Days Of JavaScript</title>
+</head>
+<body>
+    <h2 id =  "main">Ansari</h2>
+    <script>
+        //  let title = document.createElement('h1')
+        // title.className = 'title'
+        // title.style.fontSize = '24px'
+        // title.textContent = 'Creating HTML element DOM Day 2'
+
+        // console.log(title)
+
+        // let name = document.createElement('h1');
+        // name.ClassName = "tittle"
+        // name.style.fontSize='24px'
+        // name.textContent ='Creating HTML element Dom day 2'
+        // console.log(name)
+
+        let newElement = document.createElement('h2');
+        let newText = document.createTextNode("i am ansari");
+
+        console.log(newText)
+        newElement.appendChild(newText);
+        let b = document.getElementById("main").appendChild(newElement);
+
+      
+
+        console.log(newElement)
+
+        
+        
+     
+    </script>
+</body>
+</html>

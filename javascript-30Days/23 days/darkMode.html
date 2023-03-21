@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        button{
+            background-color: blue;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            margin-left: 50%;
+            margin-top: 100px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleMode()" id="btn">DarkMode</button>
+    
+    
+     <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam reprehenderit suscipit placeat quisquam odio ipsa
+        numquam cumque ipsum minima maxime, perspiciatis non aliquid, saepe reiciendis. Temporibus delectus doloribus
+        assumenda vitae voluptates! Porro quis consectetur laborum facilis fuga pariatur adipisci alias sint quisquam
+        dolorum dolor fugiat architecto tempora ut, aut magni voluptatum voluptatibus assumenda nihil illum recusandae
+        provident ipsam dicta blanditiis. Aliquid minima aspernatur voluptates labore maiores nesciunt, fugit animi
+        aliquam. Eum vero rerum quibusdam tempora modi magni illum, quod earum ad ea. Excepturi a vero ut dolorum quos
+        tempore optio culpa. Totam dolorem praesentium laborum dolor exercitationem numquam ratione architecto qui
+        voluptate modi quis, veniam temporibus tenetur quibusdam sint blanditiis in provident quos aliquam! Fugiat iure
+        nulla dolor consectetur soluta consequatur quos sunt animi, id, laboriosam, quidem eos eligendi rem inventore
+        aliquam maiores saepe laborum nostrum sit. Deserunt asperiores commodi, molestias cupiditate, quia, reiciendis
+        magni dolor ex ipsum dolorum odit placeat? A tenetur numquam sunt incidunt repudiandae iure officia rem facere
+        ullam asperiores. Sint eius magnam molestias, voluptatum consequatur non quod odit modi reiciendis
+        exercitationem accusantium vitae quae dolorem? Unde quo veniam doloribus a, exercitationem laudantium cumque
+        laboriosam iusto? Tempora, molestias? Dignissimos beatae iusto iste ab possimus voluptates, consequuntur
+        laborum.
+    </h3>
+    <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <script>
+        let bt = document.getElementById('btn');
+        function toggleMode() {
+            if (document.body.style.backgroundColor != "black") {
+                bt = document.body.style.backgroundColor = "black";
+                bt = document.body.style.color="white"
+            }
+            else {
+                bt = document.body.style.backgroundColor = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>

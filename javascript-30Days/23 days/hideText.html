@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            align-items: center;
+            border: 2px solid red;
+            background-color: red;
+            border-radius: 10px;
+            color: black;
+            margin-top: 20px;
+            margin-left: 50%;
+            padding: 10px;
+            font-size: 900;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(246, 86, 86);
+        }
+       
+    </style>
+</head>
+
+<body>
+    <button onclick="textShow()" id="btn">ShowText</button>
+    <h6 id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur error voluptatum vero doloremque
+        debitis, hic consequatur labore exercitationem quaerat impedit! Deleniti veritatis delectus cupiditate accusamus
+        nesciunt similique animi rem mollitia fugiat omnis in incidunt accusantium, minus provident at voluptatibus!
+        Eligendi cumque dolorum sequi ratione harum, accusamus non deserunt sapiente optio commodi reprehenderit ea
+        mollitia quas. Magnam exercitationem nobis distinctio saepe eum modi dolor dolorem non totam numquam at nulla
+        possimus corrupti recusandae nostrum soluta sed earum, natus ea velit error. Natus, alias distinctio corrupti
+        consectetur aperiam earum? Perferendis sapiente odio iure molestiae consequatur quasi facere recusandae fuga
+        aliquid pariatur delectus adipisci dolorem, placeat laboriosam officia rem labore, consequuntur, unde commodi
+        quod a. Nam quaerat blanditiis, molestias magnam praesentium ut? Accusantium, ipsum harum. Impedit, accusamus
+        facere voluptatum corrupti dolorum perferendis eius tenetur at deleniti ipsa repellat soluta molestias veritatis
+        facilis nobis, tempora quae vel consequatur eos eum placeat velit corporis quasi? Ratione, tenetur labore
+        laudantium mollitia minus laboriosam tempora sequi quibusdam exercitationem, nesciunt magni obcaecati ipsa
+        repellendus libero soluta est minima vero fuga ullam quos dolorum! Aperiam eum officia similique commodi tenetur
+        vitae amet illum, minus laboriosam non repellendus architecto atque veniam dolorum quis fuga eaque tempore
+        ipsam. Vitae veniam ducimus debitis dolorem quidem? Laudantium sequi molestiae, magni facilis illo perferendis
+        incidunt nesciunt et minima amet aliquam consectetur eius? Temporibus maiores illum odit ipsa placeat in dolorem
+        voluptate minus quod. Similique aut quas dicta dolore libero odio voluptatibus asperiores expedita molestiae
+        maiores itaque, iusto voluptatum quisquam saepe quae earum eos veniam iste quibusdam nam. Voluptas, illum culpa
+        quam sit asperiores dolorem repellendus distinctio explicabo quisquam modi impedit eum nisi dolorum
+        necessitatibus dicta iste nobis! Neque iure deserunt corporis exercitationem enim adipisci nemo quia sit,
+        suscipit inventore soluta ipsa, quisquam voluptas a reiciendis autem corrupti esse dolorum omnis voluptatem
+        sequi perspiciatis?
+    </h6>
+    <script>
+        function textShow(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if(para.style.display != "none"){
+                para.style.display = "none"
+            }
+            else{
+                para.style.display= "block"
+            }
+
+        }
+    </script>
+    
+</body>
+
+</html>
