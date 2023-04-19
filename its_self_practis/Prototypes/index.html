@@ -1,0 +1,266 @@
+<Script>
+    // const person = {};
+    // person.name = "Ansari",
+    // persion.age = 25;
+
+    // person.work = function(){
+    //     console.log(`${this.name}  is working `)
+    // }
+    //person.work();
+
+
+    // person.sleep = function (){
+    //     console.log(`${this.name} is sleeping`)
+    // }
+    // person.sleep()
+
+   //============================================================================================== 
+
+//     function person(name, age){
+//         const person = {};
+//        person.name = name;
+//        person.age = age
+       
+//      person.work = function(){
+//         console.log(`${this.name}  is working `)
+//     }
+//       person.work();
+
+
+//    person.sleep = function (){
+//         console.log(`${this.name} is sleeping`)
+//     }
+//        return person;
+//     }
+//       const personOne = person("ansari" , 24);
+//       const personTwo = person("ansari" , 27);
+//       const personThree = person("ansari" , 4);
+//       console.log(personOne)
+//       console.log(personTwo)
+//       console.log(personThree)
+//=====================================================================================
+
+// const shareMethos = {
+//     work: function(){
+//         console.log(`${this.name}  is working `)
+
+//     }
+//     ,
+//     sleep: function() {
+//         console.log(`${this.name} is sleeping`)
+//     }
+// }
+
+
+// function person(name, age){
+//         const person = {};
+//        person.name = name;
+//        person.age = age
+       
+//       person.work = shareMethos.work;
+     
+
+//      person.sleep = shareMethos.sleep;
+//        return person;
+//     }
+//       const personOne = person("ansari" , 24);
+//       personOne.work()
+//       personOne.sleep()
+//       console.log(personOne)
+
+
+
+
+
+// Objecr create methods ====================================>
+
+
+// const parents = {
+//     name: "Ansari",
+//     age: 22,
+
+//     work: function(){
+//         console.log(`${this.name} is working and age is ${this.age}`)
+//     }
+// }
+// parents.work()  // calling from the work function ,paraents function it use for printing perspose 
+
+// const child = {
+//     name: "srijal",
+//     age: 22,
+// }
+
+// console.log(child.work)
+
+// parents.work.call(child)   //if  we want to asscess work to call krna padega like that
+
+
+
+
+
+// Objecr create methods ====================================>
+
+// const parents = {
+//     name: "Ansari",
+//     age: 22,
+
+//     work: function(){
+//         console.log(`${this.name} is working and age is ${this.age}`)
+//     }
+// }
+
+// const child = Object.create(parents)
+
+
+// // objects create two things 
+// // 1: create a new objects 
+// // 2: delegates failed lookup to parents
+// // console.log(child)
+
+
+// // child.name= "srijal"
+
+// console.log(child.name)
+
+
+//================================================================================
+
+// const GrandParents = {
+//     name: "Odin",
+//     age: 1000,
+
+//     work(){
+//         console.log(`${this.name} and age ${this.age}`)
+//     }
+// }
+
+// const Parents = Object.create(GrandParents);
+
+// // Parents.name = " Thor";
+// // Parents.age = 293898373
+
+// const child = Object.create(Parents);
+
+// child.name = "loki",
+// child.age = 24383,
+
+
+// child.work()
+
+
+//================================================================================================================
+
+
+
+
+// const shareMethos = {
+    
+//     work: function(){
+//         console.log(`${this.name}  is working `)
+
+//     }
+//     ,
+//     sleep: function() {
+//         console.log(`${this.name} is sleeping`)
+//     }
+// }
+
+
+// function person(name, age){
+//         const person = Object.create(shareMethos);
+//        person.name = name;
+//        person.age = age
+       
+    
+//        return person;
+//     }
+//     const personOne = person("ansari" , 24);
+
+//     personOne.work();
+      
+
+
+// =======================================================================================================
+
+// ====================prototype====================
+
+// function Person(name,age){
+//     const person = Object.create(Person.prototype);
+//     person.name = name;
+//     person.age = age
+
+
+//     return person;
+// }
+
+// Person.prototype.work = function(){
+//     console.log(`${this.name} is working and age is ${this.age}`)
+// }
+
+// Person.prototype.sleep = function(){
+//     console.log(`${this.name} is sleeping and age is ${this.age}`)
+// }
+
+
+// const personOne = Person("Ansari", 22);
+// personOne.work();
+// personOne.sleep()
+
+
+//==============================prototype ==================
+
+
+// function Person(name,age){
+// //     const person = Object.create(Person.prototype);
+//     // person.name = name;
+//     // person.age = age
+
+// // constructor function 
+//     this.name = name,
+//     this.age = age
+
+
+//     // return person;
+// }
+
+// Person.prototype.work = function(){
+//     console.log(`${this.name} is working and age is ${this.age}`)
+// }
+
+// Person.prototype.sleep = function(){
+//     console.log(`${this.name} is sleeping and age is ${this.age}`)
+// }
+
+
+// const personOne =new  Person("Ansari", 22);
+// personOne.work();
+// personOne.sleep()
+
+
+//===============================Arrays prototype=====================
+
+
+// const array = [1,2,3];
+
+
+// Array.prototype.printElements = function(){
+
+//     for(const element of this)// separate the all elements 
+//     console.log(element)  // calling the printElements Arrays
+// }
+// array.printElements();
+// const secondArrays = ["A","b","C","D"];
+// secondArrays.printElements()
+
+// if we have multiple arrays to kaise print karenge 
+
+
+
+ 
+
+
+
+
+
+      
+</Script>

@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <listnk rel="stylesheet" href="style.css">
-</head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .main ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: black;
+                color: white;
+            }
 
+            .main li{
+                list-style: none;
+                font-size: 900;
+                margin-top: 16px;
+                font-weight: bold;
+                margin-bottom: 16px;
+                color: white;
+            }
+            .main li a{
+                text-decoration: none;
+            }
+            body{
+                width: auto;
+                height: 1200px;
+                background-image: url(https://tse3.mm.bing.net/th?id=OIP.KswQObejDRMiXsDxs1QKmwHaEK&pid=Api&P=0);
+            }
+         
+        </style>
+</head>
 <body>
     <div class="main">
-        <div class="navbar">
-            <nav class="menu">
-                <u1>
-                    <list>
-                        <ul class="menu1">
-                            <img src="./Airlogo.png" alt="Error loading logo" width="200">
-                            <list><a href="#">Manage</a></list>
-                            <list><a href="#">Offers</a></list>
-                            <list><a href="#">Travel Info</a></list>
-                            <list><a href="#">Flying Returns</a></list>
-                            <list><a href="#">Baggage</a></list>
-                            <list><a href="#">Contact</a></list>
-                        </ul>
-                    </list>
-                </u1>
-            </nav>
-        </div>
-
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Blog</a></li>
+           
+        </ul>
+       
+    </div>
 </body>
 
 </html>

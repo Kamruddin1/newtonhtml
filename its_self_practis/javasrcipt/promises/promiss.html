@@ -1,0 +1,24 @@
+<script>
+   const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    let foodAvailable = false;
+    if (foodAvailable) {
+      // Operation Successful! 🎊
+      resolve(); // PENDING -> FULFILLED
+    } else {
+      // Operation Unsuccessful 😭
+      reject(); // PENDING -> REJECTED
+    }
+  }, 3000);
+});
+
+console.log(promise);
+
+setTimeout(() => {
+  console.log(promise);
+}, 4000);
+
+
+
+
+</script>

@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Grade and percentage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form">
+            <h1>Students Percentage and Grade</h1>
+            <div>
+                <input id="math" type="text" placeholder="maths No" required>
+
+            </div>
+            <div>
+                <input id="chem" type="text" placeholder="Chem No" required>
+
+            </div>
+            <div>
+                <input id="phy" type="text" placeholder="phy No" required>
+
+            </div>
+            <div>
+                <input  id="eng" type="text" placeholder="eng No" required>
+
+            </div>
+            <div>
+                <button  onclick="addData()" 
+                id="btn">submit</button>
+            </div>
+            <div class="showdata">
+                <h1 id="showData"></h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

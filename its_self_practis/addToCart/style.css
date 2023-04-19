@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.form img{   
+    width: 250px;
+    height: 300px;
+}
+.form button {
+    background-color:blue ;
+    color: red;
+    font-size: xx-large;
+    cursor: pointer;
+}
+.form button:hover{
+     background-color: red;
+     color: blue;
+}

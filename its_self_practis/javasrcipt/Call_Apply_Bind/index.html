@@ -1,0 +1,26 @@
+<script>
+
+// call , apply , bind function
+
+let students = {
+    name:"ansari",
+    rollNo:1,
+    class:"a"
+}
+let printdetails = function(state, Country){
+    console.log(this.name + " " + state + " " + Country) ;
+}
+printdetails.call(students, ["lucknow", "india"])
+printdetails.apply(students,["lucknow"])
+let students2 = {
+    name:"Srijal",
+    rollNo:2,
+    class:"a"
+}
+printdetails.call(students2)
+printdetails.apply(students2)
+
+// 
+let newDetails = printdetails.bind(students);
+console.log(newDetails)
+</script>
